@@ -1,3 +1,339 @@
-<html>
-    <a href="/poc/react.html">react</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Hemanand Prakasam - Portfolio" />
+    <title>Hemanand Prakasam</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .blue-icon::before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: #0050ff;
+            margin-right: 10px;
+        }
+
+        .profile-left {
+            background: #e6dace;
+        }
+
+        .header-title {
+            display:flex;
+        }
+
+        .header-container {
+            min-height: 80px;
+        }
+
+        .profile-left__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-left {
+            justify-content: center;
+            min-height: 75vh;
+            display: flex;
+            padding-top: 50px;
+        }
+
+        .profile-right {
+            padding-top: 50px;
+        }
+
+        .img-container img {
+            border-radius: 20px;
+            height: 150px;
+        }
+
+        .blue-line {
+            width: 50px;
+            height: 2px;
+            background: #0050ff;
+        }
+
+        .btn {
+            background: #0050ff;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .nav-item {
+            font-size: 14px;
+        }
+
+        .nav-item a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .nav-item a:hover, a:focus {
+            color: #0050ff;
+        }
+
+        .nav-item.active a {
+            color: #0050ff;
+        }
+
+        footer {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 14px;
+        }
+
+        .footer-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-item a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .greet {
+            font-size: 100px;
+            position: relative;
+            left: -7px;
+        }
+
+        .greet-desc {
+            font-size: 20px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .resume {
+            background: #e6dace;
+            padding:50px 0;
+        }
+
+        .resume-content {
+            width: 720px;
+            margin: 0 auto;
+        }
+
+        .resume-title {
+            font-size: 30px;
+        }
+
+        .resume-text__exp {
+            font-size: 24px;
+        }
+
+        .desc-container {
+            background: #ffffff;
+            padding: 40px 20px;
+        }
+
+        .exp-year {
+            color: #0050ff;
+        }
+
+        @media (max-width: 576px) { 
+            .nav-item {
+                margin: 10px;
+            }
+
+            .profile-left {
+                margin: 0 auto;
+                max-width: 300px;
+                padding-bottom: 50px;
+                min-height: auto;
+                box-shadow: 0 0 10px #000000;
+            }
+
+            .profile-right {
+                background: #e6dace;
+                margin-top: 10px;
+            }
+
+            .row {
+                margin: 0px;
+            }
+
+            footer {
+                margin: 0 10px;
+                justify-content: flex-start;
+            }
+
+            .footer-item {
+                align-items: flex-start;
+            }
+
+            .resume-content {
+                width: 90%
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 768px)  {
+            .resume-content {
+                width: 500;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light header-container">
+            <div class="header-title">
+                <div class="blue-icon">
+                </div>
+                <div>
+                    <span class="font-weight-bold ">Hemanand Prakasam</span>
+                    <p class="m-0">Web Developer</p>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mr-3 profile-link"><a href="#">ABOUT ME</a></li>
+                    <li class="nav-item resume-link"><a href="#">RESUME</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="row container-fluid profile p-0">
+        <div class="profile-left col-sm-5">
+            <div class="profile-left__content">
+                <div class="img-container mb-3">
+                    <img src="./assets/images/profile.PNG" alt="profile pic" />
+                </div>
+                <p class="font-weight-bold m-0">Hemanand</p>
+                <p class="font-weight-bold b-3">Prakasam</p>
+                <p class="blue-line mb-3"></p>
+                <button class="btn resume-link">Resume</button>
+            </div>
+        </div>
+        <div class="profile-right col-sm-7">
+            <div class="profile-right__content">
+                <h2 class="greet font-weight-bold mb-0">Hello</h2>
+                <p class="greet-desc">Here's who I am & what I do</p>
+                <p class="mb-3">
+                    I am a Front end Web developer & I develop websites.
+                </p>
+                <p>
+                    I like to code things from scratch. Focuses on writing clean, elegant and efficent code.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid resume hide">
+        <div class="resume-content">
+            <div class="d-flex justify-content-center">
+                <strong class="resume-title blue-icon">Resume</strong>
+            </div>
+            <div class="d-flex mt-5">
+                <strong class="d-flex justify-content-start resume-text__exp">Experience</strong>
+                <div class="d-flex justify-content-end ml-auto">
+                    <a class="btn" href="./assets/docs/Hemanand_Prakasam_CV.pdf" download>Download CV</a>
+                </div>
+            </div>
+
+            <div class="desc-container mt-5">
+                <p class="exp-year font-weight-bold">Jan 2018 - Present</p>
+                <div class="row mt-2">
+                    <div class="col-4">
+                        <strong>Senior Developer</strong>
+                        <p class="mt-1">Wipro</p>
+                        <p class="mt-3">Kochi</p>
+                    </div>
+                    <div class="col-8">
+                        <p>Developing websites with <strong>Adobe AEM</strong> CMS for a Healthtech client. The website has full list of features - 
+                        Responsiveness, SEO, Accessibility, Internalization, RTL support.
+                        </p>
+                        <p>Work in Agile methodology, with sprint length of 2 weeks & bi-weekly releases.</p>
+                        <p>
+                            Apart from developing the business functionality, am also part of A/B testing team.
+                            My responsibility is to develop and deploy the test offers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desc-container mt-5">
+                <p class="exp-year font-weight-bold">Nov 2015 - Dec 2017</p>
+                <div class="row mt-2">
+                    <div class="col-4">
+                        <strong>IT Support Analyst</strong>
+                        <p class="mt-1">Wipro</p>
+                        <p class="mt-3">Kochi</p>
+                    </div>
+                    <div class="col-8">
+                        <p>
+                            Part of Operations team with responsibility of maintaining the websites of 100+ locales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desc-container mt-5">
+                <strong>Works</strong>
+                <p class="mt-2 mb-0">Here is a simple uncopyrighted website devloped using React framework during a programme</p>
+                <p class="mt-2 mb-0"><a href="./poc/react.html" target="_blank">Link</a></p>
+                <p class="mt-1 hide"><a href="./angular.html">Using Angular</a></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="mt-3 mb-2">
+        <div class="footer-item mr-5">
+            <strong class="font-weight-bold">Call</strong>
+            <a href="tel:09566180061">09566180061</a>
+        </div>
+        <div class="footer-item mr-5">
+            <strong class="font-weight-bold">Write</strong>
+            <a href="mailto:hemanand.prakasam@gmail.com">hemanand.prakasam@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(function() {
+            $('.profile-link').on('click', function(e) {
+                e.preventDefault();
+                $(this).addClass('active');
+                $('.resume-link').removeClass('active');
+                $('.resume').addClass('hide');
+                $('.profile').removeClass('hide');
+            });
+
+            $('.resume-link').on('click', function(e) {
+                e.preventDefault();
+                $('.resume-link').addClass('active');
+                $('.profile-link').removeClass('active');
+                $('.profile').addClass('hide');
+                $('.resume').removeClass('hide');
+            });
+        })
+    </script>
+</body>
+
 </html>
