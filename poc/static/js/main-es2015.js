@@ -472,7 +472,7 @@ const routes = [
     },
     {
         'path': 'products',
-        'loadChildren': () => __webpack_require__.e(/*! import() | products-products-module */ "products-products-module").then(__webpack_require__.bind(null, /*! ../products/products.module */ "./src/app/products/products.module.ts")).then(m => m.ProductsModule)
+        'loadChildren': () => __webpack_require__.e(/*! import() | products-products-module */ "static/js/products-products-module").then(__webpack_require__.bind(null, /*! ../products/products.module */ "./src/app/products/products.module.ts")).then(m => m.ProductsModule)
     },
     {
         'path': '',
@@ -488,7 +488,9 @@ class RoutingModule {
 }
 RoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: RoutingModule });
 RoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function RoutingModule_Factory(t) { return new (t || RoutingModule)(); }, imports: [[
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, {
+                useHash: true
+              })
         ],
         _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](RoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
@@ -497,7 +499,9 @@ RoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
         args: [{
                 declarations: [],
                 imports: [
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, {
+                        useHash: true
+                      })
                 ],
                 exports: [
                     _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]

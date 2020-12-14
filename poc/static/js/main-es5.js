@@ -937,7 +937,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       'loadChildren': function loadChildren() {
         return __webpack_require__.e(
         /*! import() | products-products-module */
-        "products-products-module").then(__webpack_require__.bind(null,
+        "static/products-products-module").then(__webpack_require__.bind(null,
         /*! ../products/products.module */
         "./src/app/products/products.module.ts")).then(function (m) {
           return m.ProductsModule;
@@ -963,7 +963,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       factory: function RoutingModule_Factory(t) {
         return new (t || RoutingModule)();
       },
-      imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+      imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, {
+        useHash: true
+      })], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
     });
 
     (function () {
@@ -980,7 +982,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
           declarations: [],
-          imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+          imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, {
+            useHash: true
+          })],
           exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
         }]
       }], null, null);
